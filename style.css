@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    /* background: url("https://www.seetorontonow.com/wp-content/uploads/2017/12/cn-tower-dusk.jpg"); */
+    background-color: black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-family: helvetica;
+  }
+  p {
+    font-size: 25px;
+    margin: 75px;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 20px 0px;
+  }
+  input {
+    border: 0;
+    padding: 10px;
+    margin-bottom: 50px;
+    font-size: 18px;
+  }
+  input[type="submit"] {
+    background: red;
+    color: white;
+  }
+  img {
+    border-radius: 50%;
+    border-width: 0;
+    margin-top: 100px;
+  }
