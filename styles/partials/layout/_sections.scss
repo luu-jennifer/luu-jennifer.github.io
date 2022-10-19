@@ -1,0 +1,126 @@
+@use "../utilities/variables" as *;
+
+.about,
+.skills,
+.projects,
+.contact {
+  padding: 10rem 0 10rem 0;
+}
+
+// .about section styles
+.about {
+  p {
+    margin-top: 3rem;
+  }
+}
+
+// .skills section styles
+.skills {
+  background-color: $tertiary;
+  .iconContainer {
+    margin: 5rem auto 1rem auto;
+    max-width: 60%;
+    ul {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-items: baseline;
+      text-align: center;
+      li {
+        margin: 0 auto;
+        margin: 3rem;
+        width: 5vw;
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+  }
+}
+
+// .projects section styles 
+.projects {
+  ul {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  li {
+    margin: 1rem;
+    max-width: 35vw;
+    text-align: center;
+    
+    
+    img {
+      border-radius: 10%;
+      width: 100%;
+      border: 1px solid black;
+      margin: 1rem;
+      // focus animation  
+      transition: .2s ease;
+      &:hover,
+      &:focus {
+          box-shadow: .2rem .2rem $tertiary;
+          transform: scale(1.25);
+        }
+    }
+    a {
+      padding: .5rem 1rem;
+      background-color: $white;
+      border: 2px solid $secondary;
+      border-radius: 10%;
+      margin: 2rem 1rem;
+      &:hover,
+      &:focus {
+        background-color: $secondary;
+      }
+    }
+  }
+}
+
+// // animation effect
+// .projectSnap {
+//   transition: .2s ease;
+//   &:hover,
+//   &:focus {
+//     transform: scale(0.95);
+//   }
+// }
+
+
+
+// .contact section styles
+.contact {
+  background-color: $secondary;
+  h2,
+  p,
+  fieldset,
+  button {
+    margin: 1rem;
+  }
+  fieldset {
+    border: none;
+    input[type=text],
+    textarea {
+      font-size: 1rem;
+      padding: .5rem;
+      width: 80%;
+    }
+    textarea {
+      height: 10rem;
+    }
+    button {
+      border: 2px solid $white ;
+      padding: 1rem 2rem;
+      border-radius: 10%;
+      &:hover,
+      &:focus {
+        background-color: $tertiary;
+      }
+    }
+  }
+}

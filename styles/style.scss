@@ -1,0 +1,9 @@
+@use "./partials/utilities/variables" as *;
+@use "./partials/core/setup";
+@use "./partials/core/typography";
+@use "./partials/core/baseStyles";
+@use "./partials/layout/nav";
+@use "./partials/layout/header";
+@use "./partials/layout/sections";
+@use "./partials/layout/footer";
+@use "./partials/utilities/mediaQueries";
